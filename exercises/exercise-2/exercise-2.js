@@ -70,3 +70,27 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+function hogwartsNames(arr) {
+  let hogwartsHouse = arr.filter((obj) => {
+    if (obj.house === "Gryffindor") {
+      return obj;
+    }
+  });
+  hogwartsHouse = hogwartsHouse.map(({ firstName, lastName }) => {
+    return firstName + " " + lastName;
+  });
+  return hogwartsHouse;
+}
+
+function teacherOccupation(arr) {
+  let pet = array.filter((obj) => {
+    if (obj.occupation === "Teacher" && obj.pet !== null) {
+      return obj;
+    }
+  });
+  pet = pet.map(({ firstName, lastName }) => {
+    return firstName + " " + lastName;
+  });
+  return pet;
+}
